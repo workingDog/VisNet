@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <style>
+    body { margin: 0; }
+    #mynetwork { width: 100%; height: 100vh; }
+  </style>
+</head>
+<body>
+
+<div id="mynetwork"></div>
+
+<script>
+  let network;
+
+  function init() {
+    const container = document.getElementById("mynetwork");
+
+    network = new vis.Network(container, {
+      nodes: [],
+      edges: []
+    }, {});
+
+    // Notify Swift that JS is ready
+    window.webkit?.messageHandlers?.callback?.postMessage({
+      type: "ready"
+    });
+
+    // Click events
+    network.on("click", function(params) {
+      window.webkit?.messageHandlers?.callback?.postMessage({
+        type: "click",
+        nodes: params.nodes,
+        edges: params.edges
+      });
+    });
+    
+  }
+
+  function setGraph(nodes, edges) {
+    if (!network) return; // guard
+
+    network.setData({
+      nodes: new vis.DataSet(nodes),
+      edges: new vis.DataSet(edges)
+    });
+  }
+
+  window.onload = init;
+</script>
+
+</body>
+</html>
