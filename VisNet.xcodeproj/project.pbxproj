@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70DF0862F7E0A820060D6A4 /* SwiftVisNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = C70DF0852F7E0A820060D6A4 /* SwiftVisNetwork */; };
 		C72BB60B2F7B9F9200955BC8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C72BB60A2F7B9F9200955BC8 /* README.md */; };
 		C72BB60D2F7BA32000955BC8 /* picture1.png in Resources */ = {isa = PBXBuildFile; fileRef = C72BB60C2F7BA32000955BC8 /* picture1.png */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70DF0862F7E0A820060D6A4 /* SwiftVisNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +76,7 @@
 			);
 			name = VisNet;
 			packageProductDependencies = (
+				C70DF0852F7E0A820060D6A4 /* SwiftVisNetwork */,
 			);
 			productName = VisNet;
 			productReference = C76112842F7B86F500175197 /* VisNet.app */;
@@ -103,6 +106,9 @@
 			);
 			mainGroup = C761127B2F7B86F500175197;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C70DF0842F7E0A820060D6A4 /* XCLocalSwiftPackageReference "../SwiftVisNetwork" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C76112852F7B86F500175197 /* Products */;
 			projectDirPath = "";
@@ -390,6 +396,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C70DF0842F7E0A820060D6A4 /* XCLocalSwiftPackageReference "../SwiftVisNetwork" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../SwiftVisNetwork;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70DF0852F7E0A820060D6A4 /* SwiftVisNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftVisNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C761127C2F7B86F500175197 /* Project object */;
 }
