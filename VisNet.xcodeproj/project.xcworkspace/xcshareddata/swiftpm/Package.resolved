@@ -1,0 +1,15 @@
+{
+  "originHash" : "519b2e49da337cb72c55ffeb152933434a0984600d472226aba205a9af89f809",
+  "pins" : [
+    {
+      "identity" : "swiftvisnetwork",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/workingDog/SwiftVisNetwork",
+      "state" : {
+        "branch" : "main",
+        "revision" : "124924d1431678561aba813c4f7a0c0104300ae2"
+      }
+    }
+  ],
+  "version" : 3
+}

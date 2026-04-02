@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		C70DF0862F7E0A820060D6A4 /* SwiftVisNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = C70DF0852F7E0A820060D6A4 /* SwiftVisNetwork */; };
 		C72BB60B2F7B9F9200955BC8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C72BB60A2F7B9F9200955BC8 /* README.md */; };
-		C72BB60D2F7BA32000955BC8 /* picture1.png in Resources */ = {isa = PBXBuildFile; fileRef = C72BB60C2F7BA32000955BC8 /* picture1.png */; };
+		C79DAA6B2F7E99680027D171 /* picture1.png in Resources */ = {isa = PBXBuildFile; fileRef = C79DAA6A2F7E99680027D171 /* picture1.png */; };
+		C79DAA6E2F7E99A40027D171 /* SwiftVisNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = C79DAA6D2F7E99A40027D171 /* SwiftVisNetwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C72BB60A2F7B9F9200955BC8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C72BB60C2F7BA32000955BC8 /* picture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture1.png; sourceTree = "<group>"; };
 		C76112842F7B86F500175197 /* VisNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79DAA6A2F7E99680027D171 /* picture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79DAA6E2F7E99A40027D171 /* SwiftVisNetwork in Frameworks */,
 				C70DF0862F7E0A820060D6A4 /* SwiftVisNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,8 +43,8 @@
 		C761127B2F7B86F500175197 = {
 			isa = PBXGroup;
 			children = (
+				C79DAA6A2F7E99680027D171 /* picture1.png */,
 				C72BB60A2F7B9F9200955BC8 /* README.md */,
-				C72BB60C2F7BA32000955BC8 /* picture1.png */,
 				C76112862F7B86F500175197 /* VisNet */,
 				C76112852F7B86F500175197 /* Products */,
 			);
@@ -77,6 +79,7 @@
 			name = VisNet;
 			packageProductDependencies = (
 				C70DF0852F7E0A820060D6A4 /* SwiftVisNetwork */,
+				C79DAA6D2F7E99A40027D171 /* SwiftVisNetwork */,
 			);
 			productName = VisNet;
 			productReference = C76112842F7B86F500175197 /* VisNet.app */;
@@ -107,7 +110,7 @@
 			mainGroup = C761127B2F7B86F500175197;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C70DF0842F7E0A820060D6A4 /* XCLocalSwiftPackageReference "../SwiftVisNetwork" */,
+				C79DAA6C2F7E99A40027D171 /* XCRemoteSwiftPackageReference "SwiftVisNetwork" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C76112852F7B86F500175197 /* Products */;
@@ -124,8 +127,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79DAA6B2F7E99680027D171 /* picture1.png in Resources */,
 				C72BB60B2F7B9F9200955BC8 /* README.md in Resources */,
-				C72BB60D2F7BA32000955BC8 /* picture1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,16 +400,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		C70DF0842F7E0A820060D6A4 /* XCLocalSwiftPackageReference "../SwiftVisNetwork" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../SwiftVisNetwork;
+/* Begin XCRemoteSwiftPackageReference section */
+		C79DAA6C2F7E99A40027D171 /* XCRemoteSwiftPackageReference "SwiftVisNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/workingDog/SwiftVisNetwork";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		C70DF0852F7E0A820060D6A4 /* SwiftVisNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = SwiftVisNetwork;
+		};
+		C79DAA6D2F7E99A40027D171 /* SwiftVisNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C79DAA6C2F7E99A40027D171 /* XCRemoteSwiftPackageReference "SwiftVisNetwork" */;
 			productName = SwiftVisNetwork;
 		};
 /* End XCSwiftPackageProductDependency section */

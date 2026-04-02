@@ -1,7 +1,7 @@
 # SwiftUI Network visualization
 
-Some basic code using the [SwiftVisNetwork](https://github.com/workingDog/SwiftVisNetwork)
- a Swift library that interfaces to the javascript visualization library [vis.js community edition](https://visjs.org/) in a SwiftUI app using a WKWebView.
+Some basic code using the [SwiftVisNetwork](https://github.com/workingDog/SwiftVisNetwork), 
+ a Swift library that interfaces to the javascript visualization library [vis.js community edition](https://visjs.org/) in a SwiftUI app.
 
 See 
 
